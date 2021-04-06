@@ -3,7 +3,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.6.5'
+ruby '2.6.6'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3'
@@ -32,7 +32,7 @@ gem 'rails-i18n', '~> 6.0.0'
 gem 'devise-i18n'                           # Install default translations
 gem 'rails_admin-i18n'                      # Use default rails_admin translations
 
-# gem 'graphiql-rails', group: :development
+gem 'graphiql-rails', group: :development
 
 # Use Puma as the app server
 gem 'puma', '~> 3.12'
@@ -87,3 +87,8 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
+
+gem "react_on_rails", "12.2.0" # Update to the current version
+gem "webpacker", "~> 5"
+
+gem 'mini_racer', platforms: :ruby
